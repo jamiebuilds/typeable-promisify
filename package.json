@@ -1,0 +1,14 @@
+{
+  "name": "typeable-promisify",
+  "description": "Wrap any node-style callback function with a promise.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "MIT",
+  "dependencies": {
+    "any-promise": "^1.3.0"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.46.0"
+  }
+}
