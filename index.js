@@ -3,7 +3,10 @@
 const AnyPromise = require('any-promise');
 
 /*::
-type Promisify = <T>(((mixed, T) => void) => mixed) => Promise<T>;
+type Promisify = <T>((
+  & ((mixed) => void)
+  & ((null, T) => void)
+) => mixed) => Promise<T>;
 */
 
 let promisify /*: Promisify */ = fn => new AnyPromise((resolve, reject) => {
