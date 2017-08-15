@@ -1,6 +1,6 @@
 // @flow
 
-const AnyPromise = require('any-promise');
+var AnyPromise = require('any-promise');
 
 /*::
 type Promisify = <T>((
@@ -9,7 +9,7 @@ type Promisify = <T>((
 ) => mixed) => Promise<T>;
 */
 
-let promisify /*: Promisify */ = fn => new AnyPromise((resolve, reject) => {
+var promisify /*: Promisify */ = fn => new AnyPromise((resolve, reject) => {
   fn((err, res) => {
     if (err) {
       reject(err);
